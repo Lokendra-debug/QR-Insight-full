@@ -62,7 +62,7 @@ const textQrRouter = async (req, res) => {
     }
 
 
-    const URL = `https://glistening-kringle-f6d59c.netlify.app/?text=${text}`
+    const URL = `https://display-msg-qrinsight.netlify.app/?text=${text}`
 
     try {
 
