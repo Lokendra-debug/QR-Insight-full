@@ -252,8 +252,7 @@ userroute.get('/auth/google/callback',
         client.set('token', token, 'EX', 21600);
         client.set('refreshtoken', refreshtoken, 'EX', 86400);
 
-        // i have to summit here fortend homepage
-        const frontendURL = `http://127.0.0.1:5500/Frontend/index.html/`
+        const frontendURL = `https://glistening-kringle-f6d59c.netlify.app`
 
         res.send(`
                 <a href="${frontendURL}?userid=${user._id}" id="myid" style="display: flex; justify-content: center; align-items: center; height: 100vh; background-color: #222222; margin: 0; padding: 0; overflow: scroll;">

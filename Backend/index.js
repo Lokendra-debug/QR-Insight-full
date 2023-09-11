@@ -52,8 +52,7 @@ const options={
         },
         servers:[
             {   
-                // here i have to sumbit backend url localhost:3000
-                url:"angry-cummerbund-newt.cyclic.app/"
+                url:"https://confused-mite-bandanna.cyclic.app/"
             }
         ]
     },
