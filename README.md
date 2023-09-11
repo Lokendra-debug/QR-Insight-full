@@ -98,12 +98,6 @@
 
   ![Aboutpage](https://github.com/Niteshthori24198/substantial-money-3994/assets/62844049/0944264b-2c8f-4590-a963-f0bcc2b4a07b)
 
-  ## Blog Page
-
-  The Blog page displays articles and posts related to the website's content.
-
-  ![Blogpage](https://github.com/Niteshthori24198/substantial-money-3994/assets/62844049/b12cc071-b1cc-4e0d-9277-18ddc35a1ba0)
-
   ## Contact Page
 
   The Contact page provides users with a form to contact the website's administrators.
