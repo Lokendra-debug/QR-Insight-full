@@ -1,5 +1,5 @@
 
-const BaseUrl_UserDisplay = `https://angry-cummerbund-newt.cyclic.app`
+const BaseUrl_UserDisplay = `https://confused-mite-bandanna.cyclic.app`
 
 let a = new URLSearchParams(window.location.search);
 

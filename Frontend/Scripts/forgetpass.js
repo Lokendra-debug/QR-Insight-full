@@ -1,5 +1,5 @@
 
-const BaseUrl_forgotPassword = `https://angry-cummerbund-newt.cyclic.app`
+const BaseUrl_forgotPassword = `https://confused-mite-bandanna.cyclic.app`
 
 var form1 = document.getElementById("raj-form1");
 var form2 = document.getElementById("raj-form2");

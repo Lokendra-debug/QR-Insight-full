@@ -1,5 +1,5 @@
 
-// const BaseUrl_scannar = `https://angry-cummerbund-newt.cyclic.app`
+// const BaseUrl_scannar = `https://confused-mite-bandanna.cyclic.app`
 
 const scanner = new Html5QrcodeScanner('reader', {
     qrbox: {

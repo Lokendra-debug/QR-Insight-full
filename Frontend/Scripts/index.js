@@ -1,5 +1,5 @@
 
-const BaseUrl_LandingJS = `https://angry-cummerbund-newt.cyclic.app`
+const BaseUrl_LandingJS = `https://confused-mite-bandanna.cyclic.app`
 
 // check access token
 setTimeout(() => {

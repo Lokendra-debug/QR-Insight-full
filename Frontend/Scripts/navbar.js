@@ -1,5 +1,5 @@
 
-const BaseUrl_navbarJS = `https://angry-cummerbund-newt.cyclic.app`
+const BaseUrl_navbarJS = `https://confused-mite-bandanna.cyclic.app`
 
 // const userIdInURL = new URLSearchParams(window.location.search)
 

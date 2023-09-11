@@ -1,5 +1,5 @@
 
-const BaseUrl_signup = `https://angry-cummerbund-newt.cyclic.app`
+const BaseUrl_signup = `https://confused-mite-bandanna.cyclic.app`
 
 
 

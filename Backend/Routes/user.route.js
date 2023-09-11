@@ -97,15 +97,15 @@ userroute.post("/register", async (req, res) => {
         let transporter = nodemailer.createTransport({
             service: 'gmail',
             auth: {
-                user: 'qr.insight.craft@gmail.com',
+                user: 'thelokendrasinghrathore@gmail.com',
                 pass: process.env.googlepassword
             }
         });
 
-        const BaseUrl_Backend = `https://angry-cummerbund-newt.cyclic.app`
+        const BaseUrl_Backend = `https://confused-mite-bandanna.cyclic.app`
 
         let mailOptions = {
-            from: 'qr.insight.craft@gmail.com',
+            from: 'thelokendrasinghrathore@gmail.com',
             to: Email,
             subject: 'Email For User Verification',
             html: `<p>Hi ${Name} <br> Welcome To QR-insight. <br/> Please click here to <a href="${BaseUrl_Backend}/user/verify?id=${userid}">verify</a>  your Email. </p>`
@@ -253,7 +253,7 @@ userroute.get('/auth/google/callback',
         client.set('refreshtoken', refreshtoken, 'EX', 86400);
 
         // i have to summit here fortend homepage
-        const frontendURL = `https://qr-insight-craft.netlify.app/`
+        const frontendURL = `http://127.0.0.1:5500/Frontend/index.html/`
 
         res.send(`
                 <a href="${frontendURL}?userid=${user._id}" id="myid" style="display: flex; justify-content: center; align-items: center; height: 100vh; background-color: #222222; margin: 0; padding: 0; overflow: scroll;">
@@ -355,13 +355,13 @@ userroute.post("/forgetpass", async (req, res) => {
             let transporter = nodemailer.createTransport({
                 service: 'gmail',
                 auth: {
-                    user: 'qr.insight.craft@gmail.com',
+                    user: 'thelokendrasinghrathore@gmail.com',
                     pass: process.env.googlepassword
                 }
             });
 
             let mailOptions = {
-                from: 'qr.insight.craft@gmail.com',
+                from: 'thelokendrasinghrathore@gmail.com',
                 to: Email,
                 subject: 'Email For OTP Verifecation',
                 html: `<p>Hi ${Name} <br> Please use this OTP to update your password.<br> ${otp} </p>`
@@ -602,7 +602,7 @@ userroute.get("/callback", async (req, res) => {
 
     // same home page url 
 
-    const frontendURL1 = `https://qr-insight-craft.netlify.app/`
+    const frontendURL1 = `http://127.0.0.1:5500/Frontend/index.html/`
 
 
 
