@@ -142,11 +142,3 @@ googlebtn.addEventListener('click', function (e) {
 
 });
 
-
-//login with github=====================
-let githubbtn = document.getElementById("raj-github")
-
-githubbtn.addEventListener("click", () => {
-    document.getElementById('raj-github').innerHTML = `<i class="fa fa-refresh fa-spin"></i> Github`;
-    window.location.href = "https://github.com/login/oauth/authorize?client_id=91d7325bd615799a7790&scope=user"
-})

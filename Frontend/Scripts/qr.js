@@ -1,5 +1,5 @@
 
-const QR_BASE_URL = `https://confused-mite-bandanna.cyclic.app`
+const QR_BASE_URL = `https://confused-mite-bandanna.cyclic.app/qrcode`
 
 
 
