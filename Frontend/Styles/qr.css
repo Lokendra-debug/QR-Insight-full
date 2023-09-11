@@ -1,0 +1,576 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=PT+Sans&display=swap');
+
+body,
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 15px;
+    font-family: 'Alkatra', cursive;
+}
+
+
+
+nav *, #chatBot *, #menu-page *, footer *{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 20px;
+}
+
+
+/* anchor tag */
+a {
+    text-decoration: none;
+    color: white;
+    width: 100%;
+    display: block;
+}
+
+a:hover {
+    color: blue;
+}
+footer a{
+    color: black;
+}
+footer a:hover{
+    color: black;
+}
+
+
+/* QR Option Tabs */
+
+/* Style the tab */
+.tab {
+    overflow: hidden;
+    border: 1px solid #ccc;
+    background-color: #f1f1f1;
+    /* margin: 0px 10px; */
+    display: grid;
+    grid-template-columns: repeat(9, 1fr);
+    margin: 20px auto;
+}
+
+/* Style the buttons that are used to open the tab content */
+.tab button {
+    background-color: inherit;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 5px 10px;
+    transition: 0.3s;
+    font-size: 18px;
+}
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+    background-color: #ddd;
+}
+
+/* Create an active/current tablink class */
+.tab button.active {
+    background-color: #ccc;
+    background-color: #00A1E0;
+    color: white;
+}
+
+/* Style the tab content */
+.tabcontent {
+    display: none;
+    padding: 6px 12px;
+    border: 1px solid #ccc;
+    border-top: none;
+}
+
+
+.tabcontent {
+    animation: fadeEffect 3s;
+    /* Fading effect takes 1 second */
+}
+
+/* Go from zero to full opacity */
+@keyframes fadeEffect {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+
+
+
+/* *************************  QR CODE HEADING ******************* */
+
+
+#qr_heading {
+    margin: 15px 0px;
+    margin-top: 100px;
+    text-align: center;
+    line-height: 25px;
+}
+
+#qr_heading>p {
+    margin: 0;
+    padding: 0;
+    letter-spacing: 1px;
+}
+
+#qr_heading>h2 {
+    margin: 0;
+    padding: 0;
+    font-size: 28px;
+    font-weight: 500;
+    letter-spacing: 2px;
+}
+
+
+
+/* ****************** images******************* */
+
+.main-container {
+    /* height: 100vh; */
+    display: flex;
+    /* grid-template-columns: repeat(6,1fr); */
+    /* gap: 15px; */
+    /* border: 2px solid red; */
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.main-container h2 {
+    margin: 0 0 10px 0;
+    color: #8373e6;
+    font-weight: 400;
+    font-size: 20px;
+}
+
+.radio-buttons {
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.custom-radio input {
+    display: none;
+}
+
+.radio-btn {
+    margin: 8px;
+    /* width: 180px; */
+    height: 100px;
+    border: 3px solid transparent;
+    display: inline-block;
+    border-radius: 10px;
+    position: relative;
+    text-align: center;
+    box-shadow: 0 0 20px #c3c3c367;
+    cursor: pointer;
+}
+
+.radio-buttons {
+    display: grid;
+    /* border: 1px solid blue; */
+    width: 75%;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 20px;
+}
+
+.radio-btn>i {
+    color: #ffffff;
+    background-color: #8373e6;
+    font-size: 20px;
+    position: absolute;
+    top: -15px;
+    left: 50%;
+    transform: translateX(-50%) scale(4);
+    border-radius: 50px;
+    padding: 3px;
+    transition: 0.2s;
+    pointer-events: none;
+    opacity: 0;
+}
+
+
+
+.custom-radio input:checked+.radio-btn {
+    border: 3px solid #8373e6;
+}
+
+.custom-radio input:checked+.radio-btn>i {
+    opacity: 1;
+    transform: translateX(-50%) scale(1);
+}
+
+
+.qr_select_design img {
+    width: 100%;
+    height: 100%;
+}
+
+
+
+/* QR generation section */
+
+
+#qr_main {
+    width: 90%;
+    /* border: 1px solid red; */
+    margin: auto;
+}
+
+.qr_detail_section {
+    width: 100%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 3fr 2fr 1fr;
+    gap: 15px;
+    /* border: 1px solid red; */
+}
+
+
+
+.qr_detail_section>div:nth-child(1)>form {
+    padding: 5px;
+    /* border: 2px solid red; */
+    text-align: center;
+    margin-top: 25px;
+}
+
+
+
+.qr_detail_section>div:nth-child(3) {
+
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    justify-content: space-around;
+
+
+}
+
+
+.qr_detail_section>div:nth-child(3)>button {
+    background-color: black;
+    background-color: #00A1E0;
+    color: aqua;
+    color: white;
+    font-size: 15px;
+    padding: 5px 2px;
+    border: none;
+    border-radius: 5px;
+    margin: 0px 10px;
+    /* font-size: 15px; */
+
+}
+
+
+.qr_detail_section>div:nth-child(3)>button:hover {
+    background-color: transparent;
+    cursor: pointer;
+    color: blue;
+    border: 1px solid black;
+    letter-spacing: 1px;
+    font-weight: bolder;
+}
+
+
+
+.QR_Code_img {
+    width: 100%;
+    height: fit-content;
+    height: 100%;
+}
+
+
+
+.qr_detail_section>div>form>input[type="submit"] {
+    background-color: black;
+    background-color: #00A1E0;
+    color: aqua;
+    color: white;
+    font-size: 15px;
+    padding: 5px 2px;
+    border: none;
+    border-radius: 5px;
+    width: 35%;
+    display: block;
+    margin: auto;
+    letter-spacing: 1px;
+
+}
+
+
+.qr_detail_section>div>form>input[type="submit"]:hover {
+    background-color: transparent;
+    cursor: pointer;
+    color: blue;
+    border: 1px solid black;
+    font-weight: bolder;
+    letter-spacing: 3px;
+
+}
+
+#text-message-qr {
+    padding: 10px;
+    margin: 20px auto 10px auto;
+    border-radius: 5px;
+    max-width: 80%;
+    text-align: center;
+}
+
+#link-url-qrl {
+    width: 80%;
+    border-radius: 5px;
+    padding: 5px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+
+.qr_country_code_select {
+    width: 28%;
+    border-radius: 5px;
+    padding: 5px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+#phone-number-qrl,
+#wa-number-qrl {
+    width: 55%;
+    border-radius: 5px;
+    padding: 5px;
+    margin-bottom: 20px;
+    margin-left: 10px;
+    text-align: center;
+
+}
+
+#upi_qr_form {
+    /* border: 1px solid red; */
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    margin: auto;
+    margin-top: 40px;
+    text-align: center;
+}
+
+#upi_qr_form>input {
+    /* width: 65%; */
+    border-radius: 5px;
+    padding: 5px;
+    margin-bottom: 20px;
+    margin-left: 10px;
+    text-align: center;
+}
+
+#upi_qr_form>input[type="submit"] {
+    margin: auto;
+}
+
+
+#wa-text-message-qr {
+    padding: 10px;
+    margin: 20px auto 10px auto;
+    border-radius: 5px;
+    width: 85%;
+    text-align: center;
+}
+
+#email_id_qr,
+#email_subject_qr,
+#zoom_meeting_id_qr,
+#zoom_meeting_url_qr,
+#wifi-ssid,
+#select_network_security_type,
+#wifi-password , .vcard-elements {
+    width: 80%;
+    border-radius: 5px;
+    padding: 5px;
+    margin-bottom: 20px;
+    text-align: center;
+
+}
+
+/* or */
+#zoom_meeting_id_qr+p {
+    /* background-color: red; */
+    margin-top: -10px;
+    margin-bottom: 10px;
+}
+
+#email-body-qr {
+    padding: 10px;
+    margin: 10px auto 10px auto;
+    border-radius: 5px;
+    width: 80%;
+    text-align: center;
+}
+
+
+
+
+
+/* **************** box shadows ******************* */
+
+.qr_detail_section {
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    margin: 15px auto;
+
+}
+
+.qr_detail_section>div {
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    border-radius: 5px;
+}
+
+
+
+/* Media - Querires - for tablet*/
+
+@media only screen and (max-width: 1100px) and (min-width: 800px) {
+
+    .tab {
+        grid-template-columns: repeat(3, 1fr);
+
+    }
+
+    .radio-buttons {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .qr_detail_section {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .qr_detail_section>div:nth-child(3) {
+        grid-area: 2/1/3/3;
+        height: 70px;
+        /* padding: 40px; */
+        /* border: 1px solid blue; */
+        flex-direction: row;
+        justify-content: space-around;
+        margin-top: 10px;
+    }
+
+
+    .qr_detail_section>div:nth-child(3)>button {
+        font-size: 15px;
+        padding: 1px 20px;
+        border: none;
+        border-radius: 5px;
+        margin: 10px 10px;
+
+    }
+
+
+
+    #text-message-qr {
+        /* padding: 10px; */
+        margin: 20px auto 10px auto;
+        border-radius: 5px;
+        width: 80%;
+
+    }
+
+
+
+    #wa-text-message-qr {
+        /* padding: 10px; */
+        margin: 20px auto 10px auto;
+        border-radius: 5px;
+        width: 85%;
+    }
+
+}
+
+
+
+
+
+
+
+
+/* Media - Querires - for mobile */
+
+
+@media only screen and (max-width: 800px) {
+
+    .tab {
+        grid-template-columns: repeat(3, 1fr);
+
+    }
+
+    .radio-buttons {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .qr_detail_section {
+        grid-template-columns: 1fr;
+    }
+
+
+    .qr_detail_section>div:nth-child(3)>button {
+        font-size: 15px;
+        padding: 1px 20px;
+        border: none;
+        border-radius: 5px;
+        margin: 12px 25px;
+    }
+
+
+    #text-message-qr {
+        /* padding: 10px; */
+        margin: 20px auto 10px auto;
+        border-radius: 5px;
+        width: 80%;
+
+    }
+
+
+    #wa-text-message-qr {
+        /* padding: 10px; */
+        margin: 20px auto 10px auto;
+        border-radius: 5px;
+        width: 85%;
+    }
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ............................Print QR CODE ...................... */
+
+@media print {
+    body * {
+        visibility: hidden;
+    }
+
+    .qr_detail_section > div:nth-child(2),
+    .qr_detail_section  > div:nth-child(2) * {
+        
+        visibility: visible;
+    }
+    
+    .qr_detail_section  > div:nth-child(2) {
+        height: 200px;
+        position: absolute;
+        left: 40%;
+        top: 40%;
+    }
+}
