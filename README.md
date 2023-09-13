@@ -65,44 +65,48 @@
 
   ## Home Page
 
-  ![Homepage](https://github.com/Niteshthori24198/substantial-money-3994/assets/62844049/a7f1163d-783b-4715-8c33-64e28fe0bbf9)
+ 
+  ![Homepage](image.png)
   
   ## Sign In / Sign Up Page
 
   The OAuth and GitHub Authentication features allow users to sign up and log in to the website using their Google or GitHub accounts.
 
-  ![login](https://github.com/Niteshthori24198/substantial-money-3994/assets/62844049/52eea794-8ce2-4df0-a177-40a18d85d35d)
-  ![signup](https://github.com/Niteshthori24198/substantial-money-3994/assets/62844049/f3c6cbcb-99d8-46bf-a34b-ed0b7c70a370)
+
+
+  ![login](image-3.png)
+  ![signup](image-4.png)
 
   ## QR Code Generator Page
 
   The QR Code Generator page allows users to generate QR codes for text, URL, Wi-Fi, Zoom, WhatsApp, phone, vCard, and email. Users can     also download, print, or share the generated QR code via email or WhatsApp.
 
-  ![Qr-generator](https://github.com/Niteshthori24198/substantial-money-3994/assets/62844049/635ba397-9c17-4b31-bcce-3bade2f0f483)
+  
+  ![Qr-generator](image-1.png)
 
   ## QR Scanner and Analysis Page
 
   The QR Scanner page allows users to scan QR codes using their device's camera or by uploading an image. The Scanner and Analysis page     provides statistical data and analysis on the usage of generated QR codes. 
 
-  ![Scanner](https://github.com/Niteshthori24198/substantial-money-3994/assets/62844049/ff3f1374-d092-4c17-a38d-9ee8d4a57a64)
+  ![Scanner](image-2.png)
   
   ## User Profile Section
 
   The User Profile section allows users to view their profile information, update their profile picture, and change their password.
 
-  ![Profile-page](https://github.com/Niteshthori24198/substantial-money-3994/assets/62844049/7308fc8c-9810-422e-8693-78cc79129df4)
+  ![profile-page](image-5.png)
 
   ## About Us Page
 
   The About Us page provides information about the project and the team behind it.
 
-  ![Aboutpage](https://github.com/Niteshthori24198/substantial-money-3994/assets/62844049/0944264b-2c8f-4590-a963-f0bcc2b4a07b)
+  ![Aboutpage](image-6.png)
 
   ## Contact Page
 
   The Contact page provides users with a form to contact the website's administrators.
 
-  ![contact](https://github.com/Niteshthori24198/substantial-money-3994/assets/62844049/1fd54e1f-4fe8-4aef-ac48-6358627629b6)
+  ![contact](image-7.png)
 
   # Technologies Used
 
